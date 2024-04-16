@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            document.addEventListener("DOMContentLoaded", function() {
+                var collapsibleHeaders = document.getElementsByClassName("topictitle1");
+                var i;
+                for (i = 0; i < collapsibleHeaders.length; i++) {
+                    collapsibleHeaders[i].addEventListener("click", function() {
+                        var content = this.nextElementSibling;
+                        var style = window.getComputedStyle(content);
+                        if (style.display == "block" || style.display == "") {
+                            content.style.display = "none";
+                        } else {
+                            content.style.display = "block";
+                        }
+                    });
+                }
+            });
+            </script>
+        <title>Collapsibles Test</title>
+    <link rel="stylesheet" href="Styles/common.css" />
+</head>
+    <body>
+        <h1 class="topictitle1">I am a header, click me</h1>
+        <div class="body"><p>Here is some content</p></div>
+    </body>
+</html>

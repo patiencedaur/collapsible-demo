@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Collapsibles Test</title>
+    <link rel="stylesheet" href="Styles/common.css" />
+    <style>
+        input[type="checkbox"] {
+            display: none;
+        }
+
+        input[type="checkbox"]:checked ~ div.body {
+            display: none;
+        }
+
+        label {
+            display: block;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+    <body>
+        <input type="checkbox" id="collapsible">
+        <label for="collapsible"><h1 class="topictitle1">I am a header, click me</h1></label>
+        <div class="body"><p>Here is some content</p></div>
+    </body>
+</html>
